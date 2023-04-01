@@ -1,0 +1,46 @@
+<h1>PRODUCTOS</h1>
+
+<form method="GET" action="/productos">
+  <label for="price">Precio:</label>
+  <input type="text" name="price" id="price">
+  <br>
+  <label for="name">Producto:</label>
+  <input type="text" name="product" id="name">
+  <br>
+  <button type="submit">Filtrar</button>
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>Producto</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each productos}}
+    <tr>
+      <td>{{this.product}}</td>
+      <td>{{this.price}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Producto</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each products}}
+    <tr>
+      <td>{{this.product}}</td>
+      <td>{{this.price}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
